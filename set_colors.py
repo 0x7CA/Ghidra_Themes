@@ -8,7 +8,7 @@ import sys
 from xml.dom import minidom
 from shutil import copyfile
 
-def set_color(xmldoc, cat, name, color):
+def set_color(xmldoc, category, name, color):
     found = False
     for category_tag in xmldoc.getElementsByTagName("CATEGORY"):
         if category_tag.getAttribute("NAME") == category:
